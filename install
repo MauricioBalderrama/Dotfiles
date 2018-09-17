@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# variables
+declare gitHubUsername=MauricioBalderrama
+declare gitHubRepositoryName=Dotfiles
+
+# settings
+declare setupSubFolder=core
+declare cloneFolder=~/${gitHubRepositoryName}
+declare repositoryName="${gitHubRepositoryName//[-]/ }"  
+
+# download repository
+if [[ ! -d ${cloneFolder} ]]; then
+    # clone
+    echo ""
+    echo "Cloning ${repositoryName}..."
+    git clone git@github.com:${gitHubUsername}/${gitHubRepositoryName}.git ${cloneFolder}
+else
+    # update
+    echo ""
+    echo "Updating ${repositoryName}..."
+    cd $cloneFolder
+    git pull origin master
+fi
+
+# setup
+cd ${cloneFolder}/${setupSubFolder}
+source setup
