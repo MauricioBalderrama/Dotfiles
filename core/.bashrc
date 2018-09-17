@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source .aliases
-source .functions
+. ~/.aliases
+. ~/.functions
