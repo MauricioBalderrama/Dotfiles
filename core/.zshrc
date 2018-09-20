@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/mauricio/.oh-my-zsh"
+export ZSH="/Users/mb/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -64,6 +64,7 @@ ZSH_THEME="avit"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -96,3 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+# Activate the autosuggestions
+source $(brew --cellar)/zsh-autosuggestions/0.4.3/share/zsh-autosuggestions/zsh-autosuggestions.zsh
