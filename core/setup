@@ -10,13 +10,13 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Confirmation to overwrite existing files
-echo "This may overwrite existing files in your home directory."
-echo ""
-echo "Do you want to continue? (Y/n)"
-read -r -n 1
-if [[ $REPLY =~ ^[Nn]$ ]]; then
-    exit 1
-fi
+# echo "This may overwrite existing files in your home directory."
+# echo ""
+# echo "Do you want to continue? (Y/n)"
+# read -r -n 1
+# if [[ $REPLY =~ ^[Nn]$ ]]; then
+#     exit 1
+# fi
 
 # Copy files to ~
 rsync --exclude=".DS_Store" \
