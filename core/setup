@@ -25,7 +25,7 @@ rsync --exclude=".DS_Store" \
     --exclude=".gitconfig" \
     -avh \
     --progress \
-    . ~;
+    .??* ~;
 
 # Global git ignore
 git config --global core.excludesfile '~/.gitignore'
