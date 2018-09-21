@@ -67,8 +67,6 @@ plugins=(
   zsh-autosuggestions
 )
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -98,6 +96,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 # Activate the autosuggestions
 source $(brew --cellar)/zsh-autosuggestions/0.4.3/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# oh-my-zsh
+source $ZSH/oh-my-zsh.sh
