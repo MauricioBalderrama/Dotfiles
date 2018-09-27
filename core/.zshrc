@@ -98,5 +98,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Activate the autosuggestions
-source $(brew --cellar)/zsh-autosuggestions/0.4.3/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Activate zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# and run on terminal: 
+# source ~/.zshrc
+
+# Activate zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+# and run on terminal: 
+# rm -f ~/.zcompdump; compinit

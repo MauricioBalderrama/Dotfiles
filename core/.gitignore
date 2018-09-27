@@ -5,6 +5,7 @@
 .DS_Store
 Desktop.ini
 Icon?
+.vscode
 
 # Thumbnail cache files
 ._*
