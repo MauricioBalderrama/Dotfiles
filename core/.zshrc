@@ -107,3 +107,6 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
 # and run on terminal: 
 # rm -f ~/.zcompdump; compinit
+
+# Laravel command
+export PATH="$HOME/.composer/vendor/bin:$PATH"
