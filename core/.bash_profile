@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+export PATH="$HOME/bin:$HOME/.composer/vendor/bin:$PATH";
 
 # Read bashrc
 [[ -r ~/.bashrc ]] && . ~/.bashrc
