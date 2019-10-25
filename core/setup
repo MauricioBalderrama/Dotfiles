@@ -27,9 +27,6 @@ rsync --exclude=".DS_Store" \
     --progress \
     .??* ~;
 
-# Global git ignore
-git config --global core.excludesfile '~/.gitignore'
-
 # Finish message
 echo "Completed."
 echo ""
