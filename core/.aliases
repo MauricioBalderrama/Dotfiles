@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Up one directlry
+alias ..='cd ..'
 alias cd..='cd ..'
 
 # Go to Projects volume
