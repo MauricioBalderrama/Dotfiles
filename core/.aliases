@@ -34,3 +34,44 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 
 # Print each PATH entry on a separate line
 alias path='echo $PATH'
+
+# PHP
+alias pa="php artisan"
+
+# Git
+alias go="git checkout"
+alias new="git checkout -b"
+alias gg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias graph="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias ff="git fetch"
+alias fetch="git fetch"
+alias mm="git merge"
+alias merge="git merge"
+alias pull="git pull"
+alias push="git push"
+alias br="git branch"
+alias branch="git branch"
+alias branches="git branch"
+alias cm='echo "Enter commit message : " && read MSG && git add . && git commit -m "$MSG"'
+alias commit='echo "Enter commit message : " && read MSG && git add . && git commit -m "$MSG"'
+
+# Git suggested (not used)
+# alias aa = 'git add --all'
+# alias bv = 'git branch -vv'
+# alias ba = 'git branch -ra'
+# alias bd = 'git branch -d'
+# alias ca = 'git commit --amend'
+# alias cb = 'git checkout -b'
+# alias cm = 'git commit -a --amend -C HEAD'
+# alias ci = 'git commit -a -v'
+# alias co = 'git checkout'
+# alias di = 'git diff'
+# alias ll = 'git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
+# alias ld = 'git log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph'
+# alias ls = 'git log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative'
+# alias mm = 'git merge --no-ff'
+# alias st = 'git status --short --branch'
+# alias tg = 'git tag -a '
+# alias pu = 'git push --tags'
+# alias un = 'git reset --hard HEAD  '
+# alias uh = 'git reset --hard HEAD^'
