@@ -4,7 +4,7 @@ export PATH="$HOME/.composer/vendor/bin:$PATH" # Composer bin
 export PATH="/usr/local/sbin:$PATH" # PHP bin
 
 # Homebrew Cache
-export HOMEBREW_CACHE=/Volumes/Installers/Homebrew
+export HOMEBREW_CACHE=/Homebrew-Installers
 
 # Aliases
 source ~/.aliases
