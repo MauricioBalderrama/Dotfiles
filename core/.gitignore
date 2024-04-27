@@ -6,6 +6,7 @@
 Desktop.ini
 Icon?
 .vscode
+.vscode/settings.json
 
 # Thumbnail cache files
 ._*
