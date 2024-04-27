@@ -1,6 +1,6 @@
 [user]
     name = Mauricio Balderrama
-    email = m@pull.studio
+    email = m@pull.srl
 
 [core]
     excludesfile = ~/.gitignore
