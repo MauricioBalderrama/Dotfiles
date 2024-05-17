@@ -27,6 +27,9 @@ rsync --exclude=".DS_Store" \
     --progress \
     .??* ~;
 
+# Install Moom config file
+defaults import com.manytricks.Moom ~/Moom.plist
+
 # Finish message
 echo "Completed."
 echo ""
